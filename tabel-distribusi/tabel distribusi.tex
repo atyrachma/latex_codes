@@ -1,0 +1,90 @@
+\documentclass[12pt,A4paper]{article}
+\usepackage{epsfig}
+%\usepackage{psfig}
+\usepackage{graphicx}
+\usepackage{graphpap}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{placeins}
+\def\baselinestretch{1.0}
+\topmargin=0.2cm \oddsidemargin=0.5cm \textheight=21.7cm
+\textwidth=14.5cm \setlength{\parindent}{1cm}
+\def\newcommand\abstractname {abstract}
+\newtheorem{theorem} {Theorem}
+\newtheorem{lemma} {Lemma}
+\newtheorem{definition} {Definition}
+\newtheorem{example} {Example}
+\newtheorem{claim}{Claim}
+\newtheorem{corollary} {Corollary}
+\newtheorem{proposition} {Proposition}
+\def\abstractname {}%\bf Abstract
+\def\refname {\bf Reference}
+\def\refname {\bf Appendix}
+\def\figurename {Figure}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\setcounter{page}{1}
+\begin{document}
+
+\noindent $10108050$ \hfill $\mathcal{ATY RACHMAWATI}$
+
+\bigskip
+
+\begin{center}
+%\large{tabel distribusi} \\
+\large{\textbf{TABLE OF DISTRIBUTIONS}}
+\bigskip
+\end{center}
+
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+   \hline  \multicolumn{6}{|c|}{\large{DISCRETE CASE}} \\[1ex] \hline
+  \textbf{Distribution} & \textbf{Parameter(s)} & \textbf{PMF ($P(X=x)$)} & \textbf{Mean} & 
+	\textbf{Variance} & \textbf{MGF} \\[0.5ex] \hline \hline
+  	BINOMIAL & $(n,p)$ & ${n \choose x}p^{x}(1-p)^{n-x}$ & $np$
+           & $np(1-p)$ & $(pe^t + 1 - p)^{n}$ \\ \hline
+ 	POISSON & $\lambda$ & ${e^{-\lambda}{\lambda}^{x}}/{x!}$ & $\lambda$
+           & $\lambda$ & $e^{\lambda {(e^t - 1)}}$ \\ \hline
+	GEOMETRIC & $p$ & $p(1-p)^{n-1}$ &  $\frac{1}{p}$
+           & $\frac{1-p}{p^2}$ & $\frac{pe^t}{1-(1-p)e^t}$ \\ \hline
+	NEGATIVE BIN & $(k,p)$ & ${n-1 \choose k-1}p^{k-1}(1-p)^{n-k}$ & $\frac{k}{p}$
+           & $\frac{k(1-p)}{p^2}$ & ${{(\frac{pe^t}{1-(1-p)e^t})}^k}$ \\ \hline
+	HYPERGEOMETRIC & $(n,N,m)$ & $\frac{{m \choose x}{{N-m} \choose {n-x}}}{{N \choose n}}$ &  $\frac{nm}{N}$
+           & ${\frac{N-n}{N-1}}{np(1-p)}$ & $ $ \\ \hline
+	ZETA/ZIPF &  & $\frac{C}{x^{\alpha -1}}$  & 
+           &  & $ $\\ \hline
+\end{tabular}}
+\end{center}
+
+
+\bigskip
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|}
+   \hline \multicolumn{7}{|c|}{\large{CONTINUOUS CASE}} \\[1ex] \hline
+  \textbf{Distribution} & \textbf{Parameter(s)} & \textbf{PDF ($f_{X}(x)$)} & \textbf{CDF} & \textbf{Mean} & 
+	\textbf{Variance} & \textbf{MGF} \\[0.5ex] \hline \hline
+    	UNIFORM & $(a,b)$ & $ f(x) = \left\{ \begin{array}{r@{\quad,\quad}l}\frac{1}{b-a} & a<x<b \\ 0 & otherwise \end{array} 		\right.$ & $\frac{x-a}{b-a}$ & $\frac{a+b}{2}$ & $\frac{(b-a)^2}{12}$ & $\frac{e^{tb}-e^{ta}}{t(b-a)}$\\ \hline
+	EXPONENTIAL & $\lambda$ & $\lambda e^{-\lambda x}$ , $x >= 0$ &  & $\frac{1}{\lambda}$
+           & $\frac{1}{{\lambda}^2}$ & $\frac{\lambda}{\lambda -t}$\\ \hline
+	NORMAL & $(\mu , {\sigma}^2)$ & $\frac{1}{{\sqrt{2 \pi}}\sigma} e^{\frac{-{(x- \mu)}^2}{2 {\sigma}^2}}$ &  & $\mu$
+           & ${\sigma}^2$ & $e^{(\mu t + \frac{{\sigma}^2 t^2}{2})}$\\ \hline
+	GAMMA & $(\alpha , \beta)$ & $\frac{\beta e^{-\beta x} (\beta x)^{\alpha -1}}{\Gamma (\alpha)}$ , $x>=0$ &  & $\frac{\alpha}{\beta}$
+           & $\frac{\alpha}{{\beta}^2}$ & ${(\frac{\beta}{\beta -t})}^{\alpha}$\\ \hline
+	CHI-SQUARED & Two.Two & Two.Three & Two.Four & Two.Five
+           & Two.Six & $n$\\ \hline
+	BETA & Two.Two & Two.Three & Two.Four & Two.Five
+           & Two.Six & $n$\\ \hline
+	PARETO & Two.Two & Two.Three & Two.Four & Two.Five
+           & Two.Six & $n$\\ \hline
+	WEIBULL & $(v, \alpha, \beta)$ & Two.Three & Two.Four & Two.Five
+           & Two.Six & $n$\\ \hline
+	CAUCHY & $\theta$ & $\frac{1}{\pi}$ $\frac{1}{1+(x-\theta)^2}$ &  & Two.Five
+           & Two.Six & $n$\\ \hline
+\end{tabular}}
+\end{center}
+\end{document}
+
