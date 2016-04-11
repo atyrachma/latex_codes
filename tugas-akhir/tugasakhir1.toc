@@ -1,0 +1,23 @@
+\contentsline {chapter}{Lembar Pengesahan}{i}
+\contentsline {chapter}{Abstrak}{i}
+\contentsline {chapter}{Abstract}{i}
+\contentsline {chapter}{Prakata}{i}
+\contentsline {chapter}{Daftar Isi}{1}
+\contentsline {chapter}{Daftar Tabel}{1}
+\contentsline {chapter}{Daftar Gambar}{1}
+\contentsline {chapter}{\numberline {1}Pendahuluan}{2}
+\contentsline {section}{\numberline {1.1}subbab bagian pertama}{3}
+\contentsline {section}{\numberline {1.2}subbab bagian kedua}{3}
+\contentsline {section}{\numberline {1.3}subbab bagian ketiga}{3}
+\contentsline {chapter}{\numberline {2}FAO}{4}
+\contentsline {section}{\numberline {2.1}subbab bagian pertama}{5}
+\contentsline {section}{\numberline {2.2}subbab bagian kedua}{5}
+\contentsline {section}{\numberline {2.3}subbab bagian ketiga}{5}
+\contentsline {chapter}{\numberline {3}FAO}{6}
+\contentsline {section}{\numberline {3.1}subbab bagian pertama}{7}
+\contentsline {section}{\numberline {3.2}subbab bagian kedua}{7}
+\contentsline {section}{\numberline {3.3}subbab bagian ketiga}{7}
+\contentsline {chapter}{\numberline {4}FAO}{8}
+\contentsline {section}{\numberline {4.1}subbab bagian pertama}{9}
+\contentsline {section}{\numberline {4.2}subbab bagian kedua}{9}
+\contentsline {section}{\numberline {4.3}subbab bagian ketiga}{9}
